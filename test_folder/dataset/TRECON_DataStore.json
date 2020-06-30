@@ -1,0 +1,41 @@
+{
+	"name": "TRECON_DataStore",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AZURE_SQL_DB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ACTIVE_POLICY_ID",
+				"type": "decimal",
+				"precision": 12,
+				"scale": 0
+			},
+			{
+				"name": "KPI_Value",
+				"type": "decimal",
+				"precision": 30,
+				"scale": 10
+			},
+			{
+				"name": "DATE",
+				"type": "date"
+			},
+			{
+				"name": "KPI_Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Business Area",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TRECON"
+		}
+	}
+}
