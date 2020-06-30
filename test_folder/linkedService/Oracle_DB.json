@@ -1,0 +1,17 @@
+{
+	"name": "Oracle_DB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Oracle",
+		"typeProperties": {
+			"connectionString": "host=idit-cgrs-db.sapiens.int;port=1521;servicename=CRSG_CI_QA;user id=idit",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzYzNjNjVlZS00M2E3LTRkN2YtODY4YS0xNjU2MWNmNTdhYWYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1-test",
+			"type": "IntegrationRuntimeReference"
+		},
+		"description": "SRC_DB"
+	}
+}
