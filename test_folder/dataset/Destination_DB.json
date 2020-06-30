@@ -1,0 +1,16 @@
+{
+	"name": "Destination_DB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AZURE_SQL_DB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "P_POL_HEADER"
+		}
+	}
+}
